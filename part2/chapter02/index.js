@@ -71,7 +71,7 @@ class Canvas extends CanvasOption {
                     const vx = randomNumBetween(-5, 5) * 0.05;
                     const vy = randomNumBetween(-5, 5) * 0.05;
                     const opacity = Math.min(-tail.vy, 0.5);
-                    this.sparks.push(tail.x, tail.y, vx, vy, opacity, tail.colorDeg);
+                    this.sparks.push(new Spark(tail.x, tail.y, vx, vy, opacity, tail.colorDeg));
                 }
 
                 if (tail.vy > -0.7) {
